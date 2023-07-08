@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo-container img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto; 
+  }
+  
+
+
+body {
+  background-color: none;
+}
+
+
+
+header {
+  background-color:black;
+  margin: auto;
+  padding: 7%;
+}
+
+
+header img {
+width: 9%;
+}
+
+
+header div {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+header li {
+  display: flex;
+  background-color: gold;
+  padding: 8px;
+  margin: 1rem;
+  border-radius: 2%;
+}
+
+header a{
+  color: black;
+}
+
+header li a {
+  text-decoration: none;
+}
+
+header li:hover {
+  background-color: goldenrod;
+}
+
+
+.box{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.box1{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.box2{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgmain {
+  width: 300px;
+  height: 300px;
+  margin: 5%;
+  
+}
+.imgmain1 {
+  width: 300px;
+  height: 300px;
+  margin: 5%;
+}
+
+.imgmain2 {
+  width: 300px;
+  height: 300px;
+  margin: 5%;
+}
+
+
+.padre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:column;
+}
+
+
+.title{
+  font-size: 300%;
+  color: black;
+  position: relative;
+}
+
+.acerca{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.title::before{
+  position: absolute;
+}
+
+.contenttext{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  max-width: 100%;
+  height: 1%;
+  width: 100%;
+  display: flex;
+}
+
+.sobreDigital {
+text-align: center;
+margin: 15%;
+color: black;
+}
+
+
+.footSection {
+background-color: none;
+display: flex;
+margin-right: 50%;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  
+}
+
+.footSection2 {
+background-color:rebeccapurple;
+display: flex;
+margin-left: 50%;
+}
+
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.divpadre {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  background-color: transparent;
+  margin: 1rem;
+  color: white;
+  list-style-type: none;
+  display: flex;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.copyR {
+  text-decoration: goldenrod;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 50%;
+}
+
+
+footer {  
+  background-color: black;
+  display: flex;
+}
+
+.footer-line {
+  background-color: white;
+}
+
+.bg-primary {
+  background-color: black;
+}
+
+.h1form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.h1form h1 {
+  text-align: center;
+}
+
+.formulario {
+  text-align: center;
+}
+
+.formulario button {
+  margin-top: 10px; 
+  background-color: goldenrod;
+}
+
+
+.custom-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-list li a {
+  display: block;
+  text-decoration: none;
+}
+
+.custom-list li:last-child {
+  margin-bottom: 0;
+}
+
+.contenedorp {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambiar el número de columnas aquí */
+    grid-row-gap: 50px; /* Ajustar la distancia entre filas aquí */
+  }
+
+.category-link {
+  margin-bottom: 15%;
+}
+
+  .formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 115px;
+    background-color: rebeccapurple;
+    border: 5px solid;
+    border-radius: 4px;
+  }
+
+  .div-form{
+    display: flex;
+    justify-content: center;
+  }
+
+.h1form {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  background-color: goldenrod;
+  border: 10px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-color: goldenrod;
+  margin-bottom: 20px;
+}
+
+/* no funciona */
+.button :hover {
+  background-color: gold;
+}
+
+#mensaje {
+  display: flex;
+  border: 1px solid;
+  margin: 30px;
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+.label-mensaje {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#email {
+  display: flex;
+  border: 1px solid;
+  margin: auto;
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+.label-email {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#nombre {
+  display: flex;
+  border: 1px solid;
+  margin: auto;
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+.label-nombre {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.artistasplasticos-title {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  background-color: rebeccapurple;
+  border-radius: 15px 15px 15px 15px;
+  width: 50%;
+}
+
+.artistasplasticos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.artcine {
+  width: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  background-color: rebeccapurple;
+  border-radius: 15px 15px 15px 15px;
+}
+
+
+.ilustracion-end {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video-mano video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin-top: 65px;
+}
+
+.animacionhand-title {
+  margin-bottom: 15%;
+  background-color: rebeccapurple;
+  border-radius: 10%;
+  color: white;
+}
+
+
+.artisthomerobotet {
+  margin-bottom: 5%;
+  background-color: rebeccapurple;
+  border-radius: 10%;
+  color: white;
+}
+
+.animate__heartBeat {
+  animation-duration: 2s;
+  animation-delay: 0.5s; /* Retraso de 0.5 segundos antes de que comience la animación */
+  animation-timing-function: ease-in-out; /* Suaviza los cambios de la animación */
+  animation-iteration-count: 3; /* Repite la animación 3 veces */
+}
+
+.animacionlost-title {
+  margin-bottom: 5%;
+  background-color: rebeccapurple;
+  border-radius: 10%;
+  color: white;
+}
+
+
+.video-lost video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin-top: 2px;
+}
+
+.animacionlost-p {
+  margin-bottom: 4%;
+}
+
+.ilustracion-lost {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.artistascine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+  gap: 80px; /* Espacio entre los elementos */
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+
+.boxm {
+  margin-top: 15%;
+  margin-bottom: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boxm ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.boxm li {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.boxm li a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  background-color: rebeccapurple;
+}
+
+
+.boxm img {
+  width: 100%;
+  height: auto;
+}
+
+.arttatto-tittle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  background-color: rebeccapurple;
+  border-radius: 15px 15px 15px 15px;
+  width: 50%;
+}
+
+
+/* Problemas con los <li> <a> despues de usar boostrap para abajo */
+
+.arturbanos-tittle a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 35%;
+  background-color: rebeccapurple;
+  border-radius: 15px 15px 15px 15px;
+  width: 50%;
+  font-size: 50px;
+}
