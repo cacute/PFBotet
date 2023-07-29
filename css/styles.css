@@ -1,76 +1,79 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    font-family: 'Raleway', sans-serif;
-    
-  }
-
-  .logo-container {
-    text-align: center;
-  }
-  
-  .logo-container img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .logo-container img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: auto; 
-  }
-  
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: none;
+  overflow-x: hidden;
 }
-
-
 
 header {
-  background-color:black;
+  background-color: black;
   margin: auto;
-  padding: 7%;
-}
-
-
-header img {
-width: 9%;
-}
-
-
-header div {
-
   display: flex;
-  justify-content: center;
-
+  height: 90px;
+  padding: 10px;
 }
-
-
-
+@media (max-width: 800px) {
+  header {
+    width: 100vw;
+  }
+}
+header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 99999px;
+}
+@media (max-width: 800px) {
+  header img {
+    display: none;
+  }
+}
+header nav {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 header ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  margin-top: 5%;
+  justify-content: center;
 }
-
-header li {
+header ul li {
   display: flex;
-  background-color: gold;
+  background-color: rebeccapurple;
   padding: 8px;
   margin: 1rem;
   border-radius: 2%;
 }
+@media (max-width: 800px) {
+  header ul li {
+    margin: 0px;
+  }
+}
+header ul li a {
+  color: white;
+}
 
-header a{
+header div {
+  display: flex;
+  justify-content: center;
+}
+
+header a {
   color: black;
 }
 
@@ -79,22 +82,37 @@ header li a {
 }
 
 header li:hover {
-  background-color: goldenrod;
+  background-color: black;
 }
 
-
-.box{
+.box {
+  margin-top: 50px;
   width: 80%;
-  margin: 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .box {
+    flex-direction: column;
+  }
+}
+.box p {
+  width: 70%;
+  color: grey;
+}
+@media (max-width: 800px) {
+  .box p {
+    width: 100%;
+  }
+}
+.box h1, .box h2, .box h3 {
+  text-align: start;
+  margin-left: 35px;
+}
 
-
-.box1{
+.box1 {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
@@ -103,22 +121,25 @@ header li:hover {
   flex-direction: column;
 }
 
-
-.box2{
+.box2 {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+main {
+  min-height: 70vh;
 }
 
 .imgmain {
   width: 300px;
   height: 300px;
   margin: 5%;
-  
 }
+
 .imgmain1 {
   width: 300px;
   height: 300px;
@@ -131,33 +152,43 @@ header li:hover {
   margin: 5%;
 }
 
-
 .padre {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-
-.title{
-  font-size: 300%;
-  color: black;
-  position: relative;
-}
-
-.acerca{
+.title {
+  filter: brightness(0.8);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10%;
+  font-size: 300%;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/background.avif);
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 35px;
+    padding: 10px;
+    height: 50vh;
+    text-align: center;
+  }
+}
+.title h1 {
+  margin: 0px;
+  margin-top: 5px;
 }
 
-.title::before{
+.title::before {
   position: absolute;
 }
 
-.contenttext{
+.contenttext {
   position: relative;
   display: flex;
   align-items: center;
@@ -172,40 +203,55 @@ header li:hover {
 }
 
 .sobreDigital {
-text-align: center;
-margin: 15%;
-color: black;
+  text-align: center;
+  margin: 15%;
+  color: black;
 }
 
-
-.footSection {
-background-color: none;
-display: flex;
-margin-right: 50%;
-}
-
-.cont {
+footer {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
-  
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    width: 100vw;
+    padding: 10px;
+  }
+}
+
+.footSection {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+.footSection ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .footSection li {
+    margin: 5px;
+  }
 }
 
 .footSection2 {
-background-color:rebeccapurple;
-display: flex;
-margin-left: 50%;
-}
-
-.cont2 {
   display: flex;
-  flex-direction: column;
-  
+  width: 100%;
+  background-color: rebeccapurple;
 }
-
-.divpadre {
+.footSection2 ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .footSection2 li {
+    margin: 5px;
+  }
 }
 
 footer li {
@@ -221,19 +267,13 @@ footer a {
   text-decoration: none;
 }
 
-
-
 .copyR {
-  text-decoration: goldenrod;
-  text-align: center;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-left: 50%;
+  justify-content: center;
+  width: 100%;
 }
 
-
-footer {  
+footer {
   background-color: black;
   display: flex;
 }
@@ -262,10 +302,9 @@ footer {
 }
 
 .formulario button {
-  margin-top: 10px; 
+  margin-top: 10px;
   background-color: goldenrod;
 }
-
 
 .custom-list {
   list-style-type: none;
@@ -287,30 +326,30 @@ footer {
 }
 
 .contenedorp {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Cambiar el número de columnas aquí */
-    grid-row-gap: 50px; /* Ajustar la distancia entre filas aquí */
-  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Cambiar el número de columnas aquí */
+  grid-row-gap: 50px; /* Ajustar la distancia entre filas aquí */
+}
 
 .category-link {
   margin-bottom: 15%;
 }
 
-  .formulario{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 115px;
-    background-color: rebeccapurple;
-    border: 5px solid;
-    border-radius: 4px;
-  }
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 115px;
+  background-color: rebeccapurple;
+  border: 5px solid;
+  border-radius: 4px;
+}
 
-  .div-form{
-    display: flex;
-    justify-content: center;
-  }
+.div-form {
+  display: flex;
+  justify-content: center;
+}
 
 .h1form {
   display: flex;
@@ -392,18 +431,6 @@ footer {
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .artcine {
   width: 50%;
   margin-top: 10%;
@@ -412,7 +439,6 @@ footer {
   background-color: rebeccapurple;
   border-radius: 15px 15px 15px 15px;
 }
-
 
 .ilustracion-end {
   max-width: 100%;
@@ -436,7 +462,6 @@ footer {
   color: white;
 }
 
-
 .artisthomerobotet {
   margin-bottom: 5%;
   background-color: rebeccapurple;
@@ -457,7 +482,6 @@ footer {
   border-radius: 10%;
   color: white;
 }
-
 
 .video-lost video {
   max-width: 100%;
@@ -483,13 +507,12 @@ footer {
   grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
   grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
   gap: 80px; /* Espacio entre los elementos */
-  margin-bottom: 15%;
   margin-top: 15%;
 }
 
 .boxm {
   margin-top: 15%;
-  margin-bottom: 50%;
+  margin-bottom: 10%;
   margin-left: 2%;
   margin-right: 2%;
   font-weight: bold;
@@ -514,33 +537,34 @@ footer {
   background-color: rebeccapurple;
 }
 
-
 .boxm img {
   width: 100%;
   height: auto;
 }
 
-.arttatto-tittle{
-  margin-top: 10%;
-  margin-bottom: 10%;
+.arttatto-tittle {
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 25%;
   background-color: rebeccapurple;
   border-radius: 15px 15px 15px 15px;
   width: 50%;
 }
 
-
 /* Problemas con los <li> <a> despues de usar boostrap para abajo */
-
+.arturbanos-tittle {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 .arturbanos-tittle a {
   text-decoration: none;
   list-style-type: none;
   color: white;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 35%;
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
   background-color: rebeccapurple;
   border-radius: 15px 15px 15px 15px;
   width: 50%;
   font-size: 50px;
-}
+}/*# sourceMappingURL=styles.css.map */
