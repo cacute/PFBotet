@@ -52,6 +52,11 @@ header ul {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  header ul {
+    padding-left: 0px;
+  }
+}
 header ul li {
   display: flex;
   background-color: rebeccapurple;
@@ -137,19 +142,16 @@ main {
 .imgmain {
   width: 300px;
   height: 300px;
-  margin: 5%;
 }
 
 .imgmain1 {
   width: 300px;
   height: 300px;
-  margin: 5%;
 }
 
 .imgmain2 {
   width: 300px;
   height: 300px;
-  margin: 5%;
 }
 
 .padre {
@@ -421,6 +423,12 @@ footer {
   border-radius: 15px 15px 15px 15px;
   width: 50%;
 }
+@media (max-width: 800px) {
+  .artistasplasticos-title {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 
 .artistasplasticos-grid {
   display: grid;
@@ -438,6 +446,12 @@ footer {
   margin-left: 25%;
   background-color: rebeccapurple;
   border-radius: 15px 15px 15px 15px;
+}
+@media (max-width: 800px) {
+  .artcine {
+    margin-left: 0px;
+    width: 100%;
+  }
 }
 
 .ilustracion-end {
@@ -509,6 +523,14 @@ footer {
   gap: 80px; /* Espacio entre los elementos */
   margin-top: 15%;
 }
+@media (max-width: 800px) {
+  .artistascine-grid {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+}
 
 .boxm {
   margin-top: 15%;
@@ -535,6 +557,11 @@ footer {
   color: white;
   font-size: 50px;
   background-color: rebeccapurple;
+}
+@media (max-width: 800px) {
+  .boxm li a {
+    font-size: 35px;
+  }
 }
 
 .boxm img {
@@ -567,4 +594,45 @@ footer {
   border-radius: 15px 15px 15px 15px;
   width: 50%;
   font-size: 50px;
+}
+
+.custom-list {
+  width: 100%;
+  height: 50vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.custom-list li {
+  background-color: rebeccapurple;
+  padding: 10px;
+  border-radius: 10px;
+}
+.custom-list li a {
+  color: white;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 500px;
+  height: 700px;
+  border: solid 1px gray;
+  padding: 20px;
+  border-radius: 5px;
+  height: 450px;
+  margin-bottom: 100px;
+}
+@media (max-width: 800px) {
+  .div-form {
+    width: 90%;
+  }
+}
+
+#botonenviar {
+  background-color: rebeccapurple;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
