@@ -1,20 +1,9 @@
-$color-violeta: rebeccapurple;
-@mixin footerContent ($BG:transparent) {
-  display: flex;
-  width: 100%;
-  background-color: $BG;
-  ul {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  }
-  li {
-    @media (max-width:800px) {
-      margin: 5px;
-    }
-  }
-}
+
+
+@import "./variables.scss";
+@import "./footer.scss";
+@import "./header.scss";
+
 
 * {
     margin: 0;
@@ -31,77 +20,6 @@ $color-violeta: rebeccapurple;
   body {
     overflow-x: hidden;
   }
-
-
-
-header {
-  background-color:black;
-  margin: auto;
-  display: flex;
-  height: 90px;
-  padding: 10px;
-  @media (max-width:800px) {
-    width: 100vw;
-  }
-  img {
-    height: 70px;
-    width: 70px;
-    border-radius: 99999px;
-    @media (max-width:800px) {
-      display: none;
-    }
-  }
-  nav {
-    @media (max-width:800px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    width: 100%;
-  }
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    @media (max-width:800px) {
-      padding-left: 0px;
-    }
-    li {
-      @media (max-width:800px) {
-        margin: 0px;
-      }
-      display: flex;
-      background-color: $color-violeta;
-      padding: 8px;
-      margin: 1rem;
-      border-radius: 2%;
-      a {
-        color: white;
-      }
-    }
-  }
-
-}
-
-
-header div {
-
-  display: flex;
-  justify-content: center;
-
-}
-
-header a{
-  color: black;
-}
-
-header li a {
-  text-decoration: none;
-}
-
-header li:hover {
-  background-color: black;
-}
 
 
 .box{
@@ -145,6 +63,45 @@ header li:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#categorias-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (max-width :800px) {
+    width: 100vw;
+    overflow-x:hidden;
+    padding: 20px;
+  }
+
+  p {
+    @media (max-width :800px) {
+      width: 50%;
+      word-wrap: break-word;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  img {
+    width: 200px;
+  }
+
 }
 
 main {
@@ -226,54 +183,6 @@ margin: 15%;
 color: black;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  @media (max-width:800px) {
-    width: 100vw;
-    padding: 10px;
-  }
-}
-
-.footSection {
-  @include footerContent();
-}
-
-.footSection2 {
-@include footerContent($color-violeta);
-}
-
-footer li {
-  background-color: transparent;
-  margin: 1rem;
-  color: white;
-  list-style-type: none;
-  display: flex;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-
-
-.copyR {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-
-footer {  
-  background-color: black;
-  display: flex;
-}
-
-.footer-line {
-  background-color: white;
-}
 
 .bg-primary {
   background-color: black;

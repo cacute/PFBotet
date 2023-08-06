@@ -1,0 +1,67 @@
+
+@mixin footerContent ($BG:transparent) {
+    display: flex;
+    width: 100%;
+    background-color: $BG;
+    ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    }
+    li {
+      @media (max-width:800px) {
+        margin: 5px;
+      }
+    }
+  }
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    @media (max-width:800px) {
+      width: 100vw;
+      padding: 10px;
+    }
+  }
+  
+  .footSection {
+    @include footerContent();
+  }
+  
+  .footSection2 {
+  @include footerContent($color-violeta);
+  }
+  
+  footer li {
+    background-color: transparent;
+    margin: 1rem;
+    color: white;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  .copyR {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  
+  footer {  
+    background-color: black;
+    display: flex;
+  }
+  
+  .footer-line {
+    background-color: white;
+  }
