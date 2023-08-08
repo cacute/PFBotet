@@ -218,7 +218,7 @@ body {
 }
 .box p {
   width: 70%;
-  color: grey;
+  color: black;
 }
 @media (max-width: 800px) {
   .box p {
